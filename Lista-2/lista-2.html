@@ -14579,28 +14579,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<pre><code>Diogo José Costa Alves</code></pre>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="1.-Comente-sobre-o-diagrama-abaixo.-O-que-o-diagrama-como-um-todo-ilustra-e-o-que-cada-componente-representa?">1. Comente sobre o diagrama abaixo. O que o diagrama como um todo ilustra e o que cada componente representa?<a class="anchor-link" href="#1.-Comente-sobre-o-diagrama-abaixo.-O-que-o-diagrama-como-um-todo-ilustra-e-o-que-cada-componente-representa?">&#182;</a></h3><p><img src="images/img-1.png" alt="diagrama" title="Diagrama"></p>
+<h3 id="Diogo-Jos%C3%A9-Costa-Alves">Diogo Jos&#233; Costa Alves<a class="anchor-link" href="#Diogo-Jos%C3%A9-Costa-Alves">&#182;</a></h3><h3 id="1.-Comente-sobre-o-diagrama-abaixo.-O-que-o-diagrama-como-um-todo-ilustra-e-o-que-cada-componente-representa?">1. Comente sobre o diagrama abaixo. O que o diagrama como um todo ilustra e o que cada componente representa?<a class="anchor-link" href="#1.-Comente-sobre-o-diagrama-abaixo.-O-que-o-diagrama-como-um-todo-ilustra-e-o-que-cada-componente-representa?">&#182;</a></h3><p><img src="images/img-1.png" alt="diagrama" title="Diagrama"></p>
 <p><strong>Reposta</strong>: 
 O diagrama como todo descreve o problema de aprendizagem supervisionada. As caixas nos ajudam a enquadrar os conceitos gerais, as setas nos ajudam a perceber como eles se integram.</p>
 <p><strong>(1)</strong> Função objetivo desconhecida. Essa caixa descreve a função ideal, desconhecida, que queremos aprender. Essa função mapeia o conjunto de entrada/features no domínio de saída da função $f:X \to Y$.</p>
 <p><strong>(2)</strong> Conjunto de treinamento. No aprendizado supervisionado, são os pares entre entradas/features e saída desejada/correta.</p>
-<p><strong>(3)</strong> Distribuição de probabilidade de X. Quando descrevemos X como parte de uma distribuição de probabilidade, fica mais claro que podemos utilizar uma hipótese criada a partir de conjunto de treinamento para ser aplicada em dados fora do conjunto, já que ambos os dados vem de uma mesma distribuição de probabilidade. Além disso, essa caixa parece descrever o caso onde a função de objetivo não é uma função deterministica mas sim uma função de probabilidade influenciada por $X$. Em outras palavras existe um ruído adicional na função objetivo.</p>
+<p><strong>(3)</strong> Distribuição de probabilidade de X. Quando descrevemos X como parte de uma distribuição de probabilidade, fica mais claro que podemos utilizar uma hipótese criada a partir de conjunto de treinamento para ser aplicada em dados fora do conjunto, já que ambos os dados vêm de uma mesma distribuição de probabilidade. Além disso, essa caixa parece descrever o caso em que a função de objetivo não é uma função determinística, mas sim uma função de probabilidade influenciada por $X$. Em outras palavras existe um ruído adicional na função objetivo.</p>
 <p><strong>(4)</strong> Conjunto de Hipóteses. Descreve o espaço de possíveis hipóteses.</p>
-<p><strong>(5)</strong> Hipótese final. Hipótese selecionada pelo algorítimo de aprendizagem. Tenta aproximar a função objetivo.</p>
-<p><strong>(6)</strong> Algorítimo de aprendizagem. É o algorítimo utilizado para explorar o espaço de hipóteses a partir do conjunto de treinamento e selecionar uma hipótese final que melhor se aproxime a função objetivo. Em muitos casos, se trata de um problema de otimização onde uma função de custo deve ser minimizada. A qualificação de melhor ou pior hipótese é dada pela função de custo que é estabelecida de acordo com o problema.</p>
+<p><strong>(5)</strong> Hipótese final. Hipótese selecionada pelo algoritimo de aprendizagem. Tenta aproximar a função objetivo.</p>
+<p><strong>(6)</strong> Algoritimo de aprendizagem. É o algoritimo utilizado para explorar o espaço de hipóteses a partir do conjunto de treinamento e selecionar uma hipótese final que melhor se aproxime a função objetivo. Em muitos casos, se trata de um problema de otimização onde uma função de custo deve ser minimizada. A qualificação de melhor ou pior hipótese é dada pela função de custo que é estabelecida de acordo com o problema.</p>
 
 </div>
 </div>
@@ -14707,11 +14694,11 @@ Essa desigualdade não fala nada sobre  $E_{in}$ ser o mais baixo possível.</p>
 <h3 id="5.-A-desigualdade-de-Hoeffding,-no-contexto-de-aprendizado-de-m%C3%A1quina,-com-respeito-a-uma-certa-hip%C3%B3tese-$h$,-%C3%A9-dada-por:">5. A desigualdade de Hoeffding, no contexto de aprendizado de m&#225;quina, com respeito a uma certa hip&#243;tese $h$, &#233; dada por:<a class="anchor-link" href="#5.-A-desigualdade-de-Hoeffding,-no-contexto-de-aprendizado-de-m%C3%A1quina,-com-respeito-a-uma-certa-hip%C3%B3tese-$h$,-%C3%A9-dada-por:">&#182;</a></h3><p>$P(|E_{in} - E_{out}| \gt \epsilon) \le 2e^{-2\epsilon^2N} $</p>
 <p>Explique o significado dessa desigualdade.</p>
 <p><strong>Resposta:</strong></p>
-<p>Assumindo que os dados da amostra foram gerados a partir da mesma distribuição de probabilidade dos dados fora da amostra, essa desigualdade tenta estabelecer, para uma hipótese específica, de forma probabilistica, um limite superior para a condição que a distância entre $E_{in} e E_{out}$ seja superior a um valor limiar de erro $\epsilon$, em outras palavras a probabilidade de uma aproximação ruim (superior ao limiar ($\epsilon$)). Nós queremos que essa probabilidade seja a menor possível. Essa desigualdade também é conhecida como limite de generalization (<em>generalization bound</em>).</p>
+<p>Assumindo que os dados da amostra foram gerados a partir da mesma distribuição de probabilidade dos dados fora da amostra, essa desigualdade tenta estabelecer, para uma hipótese específica, de forma probabilística, um limite superior para a condição que a distância entre $E_{in} e E_{out}$ seja superior a um valor limiar de erro $\epsilon$, em outras palavras a probabilidade de uma aproximação ruim (superior ao limiar ($\epsilon$)). Nós queremos que essa probabilidade seja a menor possível. Essa desigualdade também é conhecida como limite de generalization (<em>generalization bound</em>).</p>
 <p>O termo do lado esquerdo, calcula uma probabilidade e por isso tem o domínio [0,1]. Já o termo do lado direito está definido para valores superiores a 1. Nesses casos, o limite não informa nada. (O limite não limita).</p>
 <p>O aumento do limiar de erro $\epsilon$, significa um relaxamento do requisito. 
-No termo do lado esquerdo, uma aumento de $\epsilon$, pode ser lido, como que distância entre as estimativa dentro e fora dos exemplos aumente. Para a mesma hipótese e exemplos, o valor da probabilidade desse evento tende a diminuir quando $\epsilon$ aumenta. No segundo termo, o $\epsilon$ faz parte do expoente negativo, e o seu aumento condiz com a direção a diminuição do valor do termo do lado esquerdo.</p>
-<p>Já que não temos acesso ao valor de $E_{out}$, a ideia dessa desiguladade é estabelecer um critério para quando podemos utilizar $E_{in}$ como proxy de $E_{in}$.</p>
+No termo do lado esquerdo, um aumento de $\epsilon$, pode ser lido, como que distância entre as estimativa dentro e fora dos exemplos aumente. Para a mesma hipótese e exemplos, o valor da probabilidade desse evento tende a diminuir quando $\epsilon$ aumenta. No segundo termo, o $\epsilon$ faz parte do expoente negativo, e o seu aumento condiz com a direção a diminuição do valor do termo do lado esquerdo.</p>
+<p>Já que não temos acesso ao valor de $E_{out}$, a ideia dessa desigualdade é estabelecer um critério para quando podemos utilizar $E_{in}$ como proxy de $E_{in}$.</p>
 <p>Continuando, o aumento do $N$ (número de exemplos) no segundo termo também no expoente negativo, também contribui para diminuição do valor do termo do lado esquerdo. Para a mesma hipótese, mantendo constante $\epsilon$, a intuição é que quanto maior o número de exemplos maior a chance de que $E_{in}$ seja uma boa estimativa de $E_{out}$.</p>
 <p>Da mesma forma item anterior, ter um $E_{in}$ próximo ao $E_{out}$ é só parte do problema. O segundo requisito para garantir que dada hipótese é bom é que $E_{in}$ seja baixa o suficiente para aplicação.</p>
 
@@ -14736,13 +14723,13 @@ No termo do lado esquerdo, uma aumento de $\epsilon$, pode ser lido, como que di
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="6.-A-desigualde-de-Hoeffding,-no-contexto-de-aprendizado-de-m%C3%A1quina,-quando-selecionamos-uma-hip%C3%B3tese-de-um-espa%C3%A7o-com-$M$-hip%C3%B3teses-%C3%A9-dada-por:">6. A desigualde de Hoeffding, no contexto de aprendizado de m&#225;quina, quando selecionamos uma hip&#243;tese de um espa&#231;o com $M$ hip&#243;teses &#233; dada por:<a class="anchor-link" href="#6.-A-desigualde-de-Hoeffding,-no-contexto-de-aprendizado-de-m%C3%A1quina,-quando-selecionamos-uma-hip%C3%B3tese-de-um-espa%C3%A7o-com-$M$-hip%C3%B3teses-%C3%A9-dada-por:">&#182;</a></h3><p>$P(|E_{in} - E_{out}| \gt \epsilon) \le 2Me^{-2\epsilon^2N} $</p>
+<h3 id="6.-A-desigualdade-de-Hoeffding,-no-contexto-de-aprendizado-de-m%C3%A1quina,-quando-selecionamos-uma-hip%C3%B3tese-de-um-espa%C3%A7o-com-$M$-hip%C3%B3teses-%C3%A9-dada-por:">6. A desigualdade de Hoeffding, no contexto de aprendizado de m&#225;quina, quando selecionamos uma hip&#243;tese de um espa&#231;o com $M$ hip&#243;teses &#233; dada por:<a class="anchor-link" href="#6.-A-desigualdade-de-Hoeffding,-no-contexto-de-aprendizado-de-m%C3%A1quina,-quando-selecionamos-uma-hip%C3%B3tese-de-um-espa%C3%A7o-com-$M$-hip%C3%B3teses-%C3%A9-dada-por:">&#182;</a></h3><p>$P(|E_{in} - E_{out}| \gt \epsilon) \le 2Me^{-2\epsilon^2N} $</p>
 <p>Comente sobre a diferença entre essa desigualdade e a do item anterior.</p>
 <p><strong>Resposta:</strong></p>
 <p>No item anterior tratamos a avaliação de uma única hipótese específica $h$, como se o $H$ (espaço de hipóteses) fosse limitado a apenas a essa hipótese $h$.</p>
 <p>Na prática, não é incomum, mesmo quando utilizamos modelos simples que o espaço de hipóteses $H$ seja muito maior do que 1.
 Por exemplo o modelo de Perceptron, quando utiliza valores reais para seus pesos, possui um espaço de hipóteses $H$ infinito.</p>
-<p>Nesse item, tentamos mais uma vez estabelecer quando poderiamos utilizar $E_{in}$ como proxy de $E_{out}$, só que agora tratatamos de um espaço de $M$ hipóteses. Nesse caso o valor de $M$ aumenta muito o limite superior da desigualde a ponto de se tornar esse bound inútil na maioria dos casos práticos.</p>
+<p>Nesse item, tentamos mais uma vez estabelecer quando poderíamos utilizar $E_{in}$ como proxy de $E_{out}$, só que agora tratatamos de um espaço de $M$ hipóteses. Nesse caso o valor de $M$ aumenta muito o limite superior da desigualdade a ponto de se tornar esse bound inútil na maioria dos casos práticos.</p>
 <p>No caso dos Perceptron, com espaço infinito, essa desigualdade não consegue garantir nada.</p>
 
 </div>
@@ -14766,7 +14753,7 @@ Por exemplo o modelo de Perceptron, quando utiliza valores reais para seus pesos
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="7.-O-bound-$2Me%5E%7B-2%5Cepsilon%5E2N%7D$-no-item-anteior-foi-obtido-aplicando-se-o-union-bound.-O-que-%C3%A9-union-bound?">7. O <em>bound</em> $2Me^{-2\epsilon^2N}$ no item anteior foi obtido aplicando-se o <em>union-bound</em>. O que &#233; <em>union-bound</em>?<a class="anchor-link" href="#7.-O-bound-$2Me%5E%7B-2%5Cepsilon%5E2N%7D$-no-item-anteior-foi-obtido-aplicando-se-o-union-bound.-O-que-%C3%A9-union-bound?">&#182;</a></h3><p><strong>Resposta:</strong></p>
+<h3 id="7.-O-bound-$2Me%5E%7B-2%5Cepsilon%5E2N%7D$-no-item-anterior-foi-obtido-aplicando-se-o-union-bound.-O-que-%C3%A9-union-bound?">7. O <em>bound</em> $2Me^{-2\epsilon^2N}$ no item anterior foi obtido aplicando-se o <em>union-bound</em>. O que &#233; <em>union-bound</em>?<a class="anchor-link" href="#7.-O-bound-$2Me%5E%7B-2%5Cepsilon%5E2N%7D$-no-item-anterior-foi-obtido-aplicando-se-o-union-bound.-O-que-%C3%A9-union-bound?">&#182;</a></h3><p><strong>Resposta:</strong></p>
 <p><em>Union-bound</em> corresponde ao limite superior resultante de união da probabilidade de ocorrência de vários eventos.</p>
 <p>Essa operação não assume nada sobre a dependência/independência entre os eventos.</p>
 <p>No caso onde os eventos possuem muita sobreposição entre si, essa união será uma medida muito conservadora.</p>
@@ -14794,10 +14781,10 @@ Por exemplo o modelo de Perceptron, quando utiliza valores reais para seus pesos
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="8.-O-que-s%C3%A3o-dicotomias?-O-que-%C3%A9-growth-function?-O-que-%C3%A9-break-point?-Qual-a-rela%C3%A7%C3%A3o-entre-eles?">8. O que s&#227;o dicotomias? O que &#233; <em>growth-function</em>? O que &#233; <em>break point</em>? Qual a rela&#231;&#227;o entre eles?<a class="anchor-link" href="#8.-O-que-s%C3%A3o-dicotomias?-O-que-%C3%A9-growth-function?-O-que-%C3%A9-break-point?-Qual-a-rela%C3%A7%C3%A3o-entre-eles?">&#182;</a></h3><p><strong>Resposta:</strong>
 Dado que $H$ é o espaço de hipóteses de funções que mapeiam $X \to {-1, +1}$. O número de hipóteses possíveis é dado por $|H|$</p>
-<p><strong>Dicotomia</strong> é um subjconjunto de $H$ definido apenas a partir em subconjunto de exemplos $(x_1, ..., x_N) \in X $. Dado $H$ e $N$, o número de dicotomias possíveis é referenciado por $|H((x_1, ..., x_N)|$.</p>
-<p><strong>Growth-function</strong> é definida como: Dado um espaço de hipóteses $H$, e um número $N$ de examplos, <strong>growth-function</strong> é o número máximo de dicotomias que podem ser gerados. $m_H(N) = max |H((x_1, ..., x_N)|$. Para funções binárias, percebemos que a <strong>Growth-function</strong>, dado $N$ tem um limite superior menor igual a $2^N$.</p>
+<p><strong>Dicotomia</strong> é um subconjunto de $H$ definido apenas a partir em subconjunto de exemplos $(x_1, ..., x_N) \in X $. Dado $H$ e $N$, o número de dicotomias possíveis é referenciado por $|H((x_1, ..., x_N)|$.</p>
+<p><strong>Growth-function</strong> é definida como: Dado um espaço de hipóteses $H$, e um número $N$ de exemplos, <strong>growth-function</strong> é o número máximo de dicotomias que podem ser gerados. $m_H(N) = max |H((x_1, ..., x_N)|$. Para funções binárias, percebemos que a <strong>Growth-function</strong>, dado $N$ tem um limite superior menor igual a $2^N$.</p>
 <p><strong>Break point</strong> é o primeiro valor de $N$ onde $m_H(N) \lt 2^N$. É onde <strong>quebra</strong> o crescimento exponencial da função.</p>
-<p>Existe uma relação <strong>POSITIVA</strong> entre a expressividade de um conjunto de hipóteses, a diversidade de um conjunto de dicotomias e valor do break point. Espaço de hipóteses mais simples possuem break point menores. Espaço de hipóteses mais complexos, possuem break points maiores. Quanto menor o breakpoint melhor o limte gerado para <strong>growth-function</strong>.</p>
+<p>Existe uma relação <strong>POSITIVA</strong> entre a expressividade de um conjunto de hipóteses, a diversidade de um conjunto de dicotomias e valor do break point. Espaço de hipóteses mais simples possuem break point menores. Espaço de hipóteses mais complexos, possuem break points maiores. Quanto menor o breakpoint melhor o limite gerado para <strong>growth-function</strong>.</p>
 
 </div>
 </div>
@@ -14823,10 +14810,10 @@ Dado que $H$ é o espaço de hipóteses de funções que mapeiam $X \to {-1, +1}
 <h3 id="9.-Escreve-o-que-voc%C3%AA-entendeu-sobre-o-processo-envolvido-na-troca-do-$M$-em-$2Me%5E%7B-2e%5E2N%7D$-pela-growth-function-$m_H(N)$.-Qual-%C3%A9-o-novo-bound-obtido-ap%C3%B3s-a-troca.">9. Escreve o que voc&#234; entendeu sobre o processo envolvido na troca do $M$ em $2Me^{-2e^2N}$ pela <strong>growth-function</strong> $m_H(N)$. Qual &#233; o novo <em>bound</em> obtido ap&#243;s a troca.<a class="anchor-link" href="#9.-Escreve-o-que-voc%C3%AA-entendeu-sobre-o-processo-envolvido-na-troca-do-$M$-em-$2Me%5E%7B-2e%5E2N%7D$-pela-growth-function-$m_H(N)$.-Qual-%C3%A9-o-novo-bound-obtido-ap%C3%B3s-a-troca.">&#182;</a></h3><p><strong>Resposta:</strong></p>
 <p>Um limite de generalização que utiliza infinito $M$ não informa nada. O processo de troca de $2Me^{-2e^2N}$ pela <strong>growth-function</strong> $m_H(N)$ é a tentativa de trocar um termo que é <strong>infinito</strong> por algo <strong>finito</strong>.</p>
 <p>O primeiro passo foi reconhecer que na construção $2Me^{-2e^2N}$ foi utilizada a <strong>union-bound</strong> que é estimativa extremamente conservadora quando pensamos que pode existir muitas superposições entre as hipóteses de $H$.</p>
-<p>A partir disso começou o processo de tentar descrever algo como sendo o número de hipóteses efetivas, como menos sobpresições de hipóteses.  Para isso foi proposta a <strong>growth-function</strong> $m_H(N)$.</p>
-<p>Durante a aula, conseguimos estabelecer a <strong>growth-function</strong> para um espaço de hipóteses $H$ que $X \to {-1, +1}$. A partir do conceito de dicotomias estabelecemos que $m_H(N) = max |H((x_1, ..., x_N)|$, o é o número máximo de dicotomias para dado $N$ (número de exemplos). Nesse caso já consiguimos alterar o limite superior de algo infinito para no máximo $2^N$. O novo limite passa a ser $m_H(N) \le 2^N$.</p>
+<p>A partir disso começou o processo de tentar descrever algo como sendo o número de hipóteses efetivas, como menos sobreposições de hipóteses.  Para isso foi proposta a <strong>growth-function</strong> $m_H(N)$.</p>
+<p>Durante a aula, conseguimos estabelecer a <strong>growth-function</strong> para um espaço de hipóteses $H$ que $X \to {-1, +1}$. A partir do conceito de dicotomias estabelecemos que $m_H(N) = max |H((x_1, ..., x_N)|$, o é o número máximo de dicotomias para dado $N$ (número de exemplos). Nesse caso já conseguimos alterar o limite superior de algo infinito para no máximo $2^N$. O novo limite passa a ser $m_H(N) \le 2^N$.</p>
 <p>A <strong>growth-function</strong> é uma função da classe de hipóteses e também de $N$. O livro estabelece o conceito de <strong>break point</strong>, conseguimos perceber uma relação entre o valor do break point e a complexidade do espaço de hipóteses. Por fim é estabelecido que quando existe <strong>break point</strong>, a <strong>growth-function</strong> se torna polinomial. Quanto menor o break point melhor o limite.</p>
-<p>Para esses casos, a <strong>growth-function</strong> é reescrita como um polinômio de grau $k$ (breakpoint) - 1. Nesses caso, com a  <strong>growth-function</strong> com crescimento polinimial o limite de generalização passa a fazer sentido quando utilizamos um $N$ suficientemente grande.</p>
+<p>Para esses casos, a <strong>growth-function</strong> é reescrita como um polinômio de grau $k$ (breakpoint) - 1. Nesses casos, com a  <strong>growth-function</strong> com crescimento polinomial o limite de generalização passa a fazer sentido quando utilizamos um $N$ suficientemente grande.</p>
 <p>Nos casos que não há breakpoints, o limite de generalização nunca será igual a zero e essa desigualdade não diz muita coisa.</p>
 
 </div>
@@ -14841,10 +14828,10 @@ Dado que $H$ é o espaço de hipóteses de funções que mapeiam $X \to {-1, +1}
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="10.-O-que-%C3%A9-VC-dimension?-Como-chegamos-ao-VC-generalized-bound-(teorema-2.5-do-livro)-a-partir-da-desigualdade-de-Hoeffding?">10. O que &#233; VC dimension? Como chegamos ao VC generalized bound (teorema 2.5 do livro) a partir da desigualdade de Hoeffding?<a class="anchor-link" href="#10.-O-que-%C3%A9-VC-dimension?-Como-chegamos-ao-VC-generalized-bound-(teorema-2.5-do-livro)-a-partir-da-desigualdade-de-Hoeffding?">&#182;</a></h3><p><strong>Resposta:</strong></p>
 <p>A definição é que VC dimension de um espaço de hipóteses $H$, descrito como $d_{VC}(H)$ ou simplesmente $d_{VC}$, é o maior valor de $N$ que o qual $m_H(N) = 2^N$. Se $m_H(N)=2^N$ para todos $N$, então $d_{VC} = \infty$. Com isso podemos reescrever $k$ (break point) em função de $d_{VC}$, $k = d_{VC} + 1$.</p>
-<p>Com isso conseguimos reescrever a <strong>growth-function</strong> de crescrimento polinomial de $m_H(N) \le \sum_{i=0}^{k-1} \binom{N}{i}$ em função de $d_{VC}$.</p>
+<p>Com isso conseguimos reescrever a <strong>growth-function</strong> de crescimento polinomial de $m_H(N) \le \sum_{i=0}^{k-1} \binom{N}{i}$ em função de $d_{VC}$.</p>
 <p>$m_H(N) \le \sum_{i=0}^{d_{VC}} \binom{N}{i}$</p>
 <p>Dessa forma, $d_{VC}$ passa ser a ordem polinomial desse <em>bound</em>.</p>
-<p>Uma outra maneira de enxergar $d_{VC}$ é como uma medida efetiva dos números de parametros de um modelo. Quanto mais parametros um modelo possui, mas diverso é o espaço de hipóteses $H$, isso reflete em uma ordem polinomial maior na <strong>grow-function</strong>.</p>
+<p>Uma outra maneira de enxergar $d_{VC}$ é como uma medida efetiva dos números de parâmetros de um modelo. Quanto mais parâmetros um modelo possui, mas diverso é o espaço de hipóteses $H$, isso reflete em uma ordem polinomial maior na <strong>grow-function</strong>.</p>
 <p>Chegamos ao teorema 2.5 do livro substituindo $M$ da desigualdade de Hoeffding pela <strong>growth-function</strong>.  Só que a <strong>growth-function</strong> agora em função de $d_{VC}$. Esse <em>bound</em> faz sentindo apenas para os casos que  $d_{VC}$ não é infinito.</p>
 
 </div>
@@ -14860,7 +14847,7 @@ Dado que $H$ é o espaço de hipóteses de funções que mapeiam $X \to {-1, +1}
 <h3 id="11.-A-Equa%C3%A7%C3%A3o-(2.13)-do-livro-texto-%C3%A9-a-seguinte">11. A Equa&#231;&#227;o (2.13) do livro texto &#233; a seguinte<a class="anchor-link" href="#11.-A-Equa%C3%A7%C3%A3o-(2.13)-do-livro-texto-%C3%A9-a-seguinte">&#182;</a></h3><p>$N \gt \frac{8}{e^2}ln(\frac{4((2N)^{d_{VC}}+1)}{\delta})$</p>
 <p>Comente quais as implicações práticas dela.</p>
 <p><strong>Resposta:</strong></p>
-<p>A implicações práticas são que, como dados suficientes, todas hipóteses de um espaço infinito de hipóteses $H$ com uma $d_{VC}$ finita irão aproximar bem $E_{in}$ e $E_{out}$, isto é, será possível generalizar do conjunto de treinamento para a vida real. Isso estabelece matamaticamente a viabilidade do aprendizado de máquina a partir de espaço de hipóteses $H$ infinito.</p>
+<p>A implicações práticas são que, como dados suficientes, todas hipóteses de um espaço infinito de hipóteses $H$ com uma $d_{VC}$ finita irão aproximar bem $E_{in}$ e $E_{out}$, isto é, será possível generalizar do conjunto de treinamento para a vida real. Isso estabelece matematicamente a viabilidade do aprendizado de máquina a partir de espaço de hipóteses $H$ infinito.</p>
 
 </div>
 </div>
@@ -14875,7 +14862,7 @@ Dado que $H$ é o espaço de hipóteses de funções que mapeiam $X \to {-1, +1}
 <h3 id="12.-Quais-s%C3%A3o-as-similaridades-entre-o-VC-analysis-e-o-Bias-variance-analysis?">12. Quais s&#227;o as similaridades entre o VC analysis e o Bias-variance analysis?<a class="anchor-link" href="#12.-Quais-s%C3%A3o-as-similaridades-entre-o-VC-analysis-e-o-Bias-variance-analysis?">&#182;</a></h3><p><strong>Resposta:</strong></p>
 <p>Na VC analysis, $E_{out}$ é expresso como a soma de $E_{in}$ e o erro generalização que é limitado por $\Omega$, a penalidade pela complexidade do modelo.</p>
 <p>Na Bias-variance analysis, $E_{out}$ é expresso com a soma do <em>bias</em> e <em>variance</em>.</p>
-<p>Os gráficos abaixo evidênciam esse relação.</p>
+<p>Os gráficos abaixo evidenciam essa relação.</p>
 <p><img src="images/img-2.png" alt="gráfico" title="gráfico"></p>
 
 </div>
